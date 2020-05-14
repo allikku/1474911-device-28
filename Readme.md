@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
-* Студент: [Ангелина Онипченко](https://up.htmlacademy.ru/htmlcss/28/user/1474911).
-* Наставник: `Неизвестно`.
+* Студент: [Ангелина](https://up.htmlacademy.ru/htmlcss/28/user/1474911).
+* Наставник: [Виктор Кан] (https://htmlacademy.ru/profile/viktorkan).
 
 ---
 
