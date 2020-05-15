@@ -12,9 +12,9 @@
 
       <div class="header-top">
         <form action="#" method="get" class="search-form">
-          <label for="header-search" class="visually-hidden"></label>
+          <label for="header-search" class="visually-hidden">Поиск по сайту</label>
           <input type="text" name="search" id="header-search" placeholder="Поиск по сайту">
-          <button type="submit"></button>
+          <button type="submit">Найти</button>
         </form>
         <div class="header-inner-wrapper">
           <ul class="sign-in">
@@ -28,7 +28,7 @@
       <nav class="main-navigation">
         <ul>
           <li class="navigation-item">
-            <a href="catalogue.html">Каталог товаров</span></a>
+            <a href="catalogue.html">Каталог товаров</a>
             <ul class="catalogue-list visually-hidden">
               <li><a href="#">Виртуальная реальность</a></li>
               <li><a href="#">Фитнес-браслеты</a></li>
@@ -51,7 +51,7 @@
       <section class="showcase">
         <h2>Избранные товары</h2> <!--Переименовать-->
         <!--Slider -->
-        <div class="slide-1">
+        <div class="slide-1 slide--active">
           <div class="slider-wrapper">
             <img src="#" alt="Самая длинная палка для селфи" class="slider-img">
           </div>
@@ -76,13 +76,13 @@
           </div>
         </div>
 
-        <div class="slide-2 visually-hidden">
+        <div class="slide-2 slide--inactive">
           <div class="slider-wrapper">
             <img src="#" alt="Мотивирующий фитнес-браслет" class="slider-img">
           </div>
           <div class="slider-wrapper">
             <span>02</span>
-            <h3>Фитнес-браслет</h3>
+            <h3 class="visually-hidden">Фитнес-браслет</h3>
             <p>Худеем правильно!</p>
             <p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
             <a href="#">Подробнее</a>
@@ -97,13 +97,13 @@
           </div>
         </div>
 
-        <div class="slide-3 visually-hidden">
+        <div class="slide-3 slide--inactive">
           <div class="slider-wrapper">
             <img src="#" alt="Квадрокоптер с мощным лазером" class="slider-img">
           </div>
           <div class="slider-wrapper">
             <span>03</span>
-            <h3>Квадрокоптер</h3>
+            <h3 class="visually-hidden">Квадрокоптер</h3>
             <p>Порхает как бабочка, жалит как пчела!</p>
             <p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
             <a href="#">Подробнее</a>
@@ -120,11 +120,11 @@
           </div>
         </div>
 
-        <ul class="slider-controls">
-          <li>Первый слайд</li>
-          <li>Второй слайд</li>
-          <li>Третий слайд</li>
-        </ul>
+        <div class="slider-controls">
+          <button>Первый слайд</button>
+          <button>Второй слайд</button>
+          <button>Третий слайд</button>
+        </div>
       </section>
 
     <!--Категории товаров -->
@@ -218,7 +218,7 @@
           <h2>Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <img src="link" alt="Адрес: ул.Строителей, 15">
-          <button>Напишите нам</button>
+          <a href="#">Напишите нам</a>
         </section>
       </div>
     </main>
@@ -249,9 +249,9 @@
 
       <div class="footer-wrapper">
         <ul class="social-links">
-          <li class="FB"><a href="#">Facebook</a></li>
-          <li class="IG"><a href="#">Instagram</a></li>
-          <li class="TW"><a href="#">Twitter</a></li>
+          <li class="Fb"><a href="#">Facebook</a></li>
+          <li class="Ig"><a href="#">Instagram</a></li>
+          <li class="Tw"><a href="#">Twitter</a></li>
         </ul>
 
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="link" alt="Логотип HTML Academy">HTML Academy</a>
