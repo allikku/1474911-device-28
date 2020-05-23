@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
+
   <body>
     <header class="page-header">
       <a href="#" class="header-logo">
@@ -11,11 +13,12 @@
       </a>
 
       <div class="header-top">
-        <form action="get" class="search-form">
+        <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
           <label for="header-search" class="visually-hidden">Поиск по сайту</label>
           <input type="text" name="search" id="header-search" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
+
         <div class="header-inner-wrapper">
           <ul class="sign-in">
             <li><a href="#">Валентин Петухов</a></li>
@@ -56,8 +59,38 @@
 
       <section class="filters">
         <h2>Фильтры</h2>
-        <form action="#" method="get">
-          <!-- Здесь будет разметка формы -->
+        <form action="https://echo.htmlacademy.ru" method="get" class="filters">
+          <fieldset>
+            <legend>Стоимость</legend>
+
+            <div class="price-range">
+              <div class="price-scale"></div>
+              <div class="toggle toggle-min"></div>
+              <div class="toggle toggle-max"></div>
+            </div>
+            <label>от <input type="number" value="0" name="min-price"></label>
+            <label>до <input type="number" value="5000" name="max-price"></label>
+          </fieldset>
+
+          <fieldset>
+            <legend>Цвет</legend>
+            <ul>
+              <li><label><input type="checkbox" name="black" checked>Чёрный</label></li>
+              <li><label><input type="checkbox" name="white">Белый</label></li>
+              <li><label><input type="checkbox" name="blue" checked>Синий</label></li>
+              <li><label><input type="checkbox" name="red" checked>Красный</label></li>
+              <li><label><input type="checkbox" name="pink">Розовый</label></li>
+            </ul>
+          </fieldset>
+
+          <fieldset>
+            <legend>Bluetooth</legend>
+            <ul>
+              <li><label><input type="radio" name="bluetooth" checked>Есть</label></li>
+              <li><label><input type="radio" name="bluetooth">Нет</label></li>
+            </ul>
+          </fieldset>
+          <button type="submit">Показать</button>
         </form>
       </section>
 
@@ -119,12 +152,13 @@
         </ul>
 
         <div class="catalogue-nav">
+          <p class="visually-hidden">Навигация по страницам каталога</p>
           <a href="#">Назад</a>
 
           <ul class="catalogue-pages">
-            <li class="page-number"><a href="#"></a>1</li>
-            <li class="page-number"><a href="#"></a>2</li>
-            <li class="page-number"><a href="#"></a>3</li>
+            <li class="page-number"><a href="#"><span class="visually-hidden">Страница </span>1</a></li>
+            <li class="page-number"><a href="#"><span class="visually-hidden">Страница </span>2</a></li>
+            <li class="page-number"><a href="#"><span class="visually-hidden">Страница </span>3</a></li>
           </ul>
 
           <a href="#">Вперед</a>

@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
+
   <body>
     <header class="page-header">
       <a href="#" class="header-logo">
@@ -11,11 +13,12 @@
       </a>
 
       <div class="header-top">
-        <form action="#" method="get" class="search-form">
+        <form action="https://echo.htmlacademy.ru" method="get" class="search-form">
           <label for="header-search" class="visually-hidden">Поиск по сайту</label>
           <input type="text" name="search" id="header-search" placeholder="Поиск по сайту">
           <button type="submit">Найти</button>
         </form>
+
         <div class="header-inner-wrapper">
           <ul class="sign-in">
             <li><a href="#">Войти</a></li>
@@ -49,7 +52,7 @@
       <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
 
       <section class="showcase">
-        <h2>Избранные товары</h2> <!--Переименовать-->
+        <h2>Промо-предложения</h2>
         <!--Slider -->
         <div class="slide-1 slide--active">
           <div class="slider-wrapper">
@@ -158,9 +161,9 @@
         <h2 class="visually-hidden">Наши услуги</h2>
 
         <ul class="services-list">
-          <li>Доставка</li>
-          <li>Гарантия</li>
-          <li>Кредит</li>
+          <li><button type="button">Доставка</button></li>
+          <li><button type="button">Гарантия</button></li>
+          <li><button type="button">Кредит</button></li>
         </ul>
 
         <ul class="services-desc">
@@ -257,5 +260,32 @@
         <a href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/academy-logo.svg" alt="Логотип HTML Academy" width="27" height="34">HTML Academy</a>
       </div>
     </footer>
+
+    <div class="contact-us-popup">
+      <form method="post" action="https://echo.htmlacademy.ru/" class="contact-form">
+        <p>
+          <label for="contact-us-name">Ваше имя:</label>
+          <input type="text" name="name" id="contact-us-name" placeholder="Имя Фамилия">
+        </p>
+
+        <p>
+          <label for="contact-us-email">Ваш e-mail:</label>
+          <input type="email" name="email" id="contact-us-email" placeholder="email@example.com">
+        </p>
+
+        <p>
+          <label for="contact-us-message">Текст письма:</label>
+          <input type="text" name="message" id="contact-us-message" placeholder="В свободной форме">
+        </p>
+
+        <button type="submit">Отправить</button>
+      </form>
+      <button type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
+
+    <div class="map-popup">
+      <img src="img/map-big.png" alt="Наш офис находится по адресу: ул.Строителей, 15" width="994" height="593">
+      <button type="button"><span class="visually-hidden">Закрыть</span></button>
+    </div>
   </body>
 </html>
