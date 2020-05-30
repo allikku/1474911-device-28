@@ -3,12 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>Интернет-магазин «Девайс»</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;800&display=swap" rel="stylesheet">
+    <link href="normalize.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
 
   <body>
     <header class="page-header">
-      <a href="#" class="header-logo">
+      <a href="index.html" class="header-logo">
         <img src="img/device-logo.svg" alt="Логотип интернет-магазина Device" width="163" height="35">
       </a>
 
@@ -50,15 +52,15 @@
     </header>
 
     <main>
-      <h1>Моноподы для селфи</h1>
-      <ul class="catalogue-nav">
+      <h1 class="page-title">Моноподы для селфи</h1>
+      <ul class="catalogue-top-nav">
         <li><a href="index.html">Главная</a></li>
         <li><a href="catalogue.html">Каталог товаров</a></li>
         <li><a href="#">Моноподы для селфи</a></li>
       </ul>
 
       <section class="filters">
-        <h2>Фильтры</h2>
+        <h2 class="title">Фильтры</h2>
         <form action="https://echo.htmlacademy.ru" method="get" class="filters">
           <fieldset>
             <legend>Стоимость</legend>
@@ -90,7 +92,7 @@
               <li><label><input type="radio" name="bluetooth">Нет</label></li>
             </ul>
           </fieldset>
-          <button type="submit">Показать</button>
+          <button type="submit" class="button">Показать</button>
         </form>
       </section>
 
@@ -98,7 +100,7 @@
         <h2 class="visually-hidden">Товары категории</h2>
 
         <div class="sorting">
-          <p>Сортировка:</p>
+          <p class="title">Сортировка:</p>
           <a href="#">По цене</a>
           <a href="#">По типу</a>
           <a href="#">По популярности</a>
@@ -112,56 +114,56 @@
         <ul class="catalogue-list">
           <li class="catalogue-item">
             <img src="img/item1.jpg" alt="Изображение товара" width="360" height="380">
-            <h3><a href="#">Любительская селфи-палка</a></h3>
-            <span>500 руб.</span>
+            <h3 class="title"><a href="#">Любительская селфи-палка</a></h3>
+            <span class="catalogue-price">500 руб.</span>
             <div class="catalogue-item-hidden">
-              <a href="#">В корзину</a>
-              <a href="#">Добавить к сравнению</a>
+              <a href="#" class="button">В корзину</a>
+              <a href="#" class="catalogue-compare">Добавить к сравнению</a>
             </div>
           </li>
 
           <li class="catalogue-item">
             <img src="img/item2.jpg" alt="Изображение товара" width="360" height="380">
-            <h3><a href="#">Профессиональная селфи-палка</a></h3>
+            <h3 class="title"><a href="#">Профессиональная селфи-палка</a></h3>
             <span>1 500 руб.</span>
             <div class="catalogue-hidden">
-              <a href="#">В корзину</a>
-              <a href="#">Добавить к сравнению</a>
+              <a href="#" class="button">В корзину</a>
+              <a href="#" class="catalogue-compare">Добавить к сравнению</a>
             </div>
           </li>
 
           <li class="catalogue-item">
             <img src="img/item3.jpg" alt="Изображение товара" width="360" height="380">
-            <h3><a href="#">Непотопляемая селфи-палка</a></h3>
+            <h3 class="title"><a href="#">Непотопляемая селфи-палка</a></h3>
             <span>2 500 руб.</span>
             <div class="catalogue-hidden">
-              <a href="#">В корзину</a>
-              <a href="#">Добавить к сравнению</a>
+              <a href="#" class="button">В корзину</a>
+              <a href="#" class="catalogue-compare">Добавить к сравнению</a>
             </div>
           </li>
 
           <li class="catalogue-item">
             <img src="img/item4.jpg" alt="Изображение товара" width="360" height="380">
-            <h3><a href="#">Селфи-палка "Следуй за мной"</a></h3>
+            <h3 class="title"><a href="#">Селфи-палка "Следуй за мной"</a></h3>
             <span>4 900 руб.</span>
             <div class="catalog-hidden">
-              <a href="#">В корзину</a>
-              <a href="#">Добавить к сравнению</a>
+              <a href="#" class="button">В корзину</a>
+              <a href="#" class="catalogue-compare">Добавить к сравнению</a>
             </div>
           </li>
         </ul>
 
         <div class="catalogue-nav">
           <p class="visually-hidden">Навигация по страницам каталога</p>
-          <a href="#">Назад</a>
+          <a href="#" class="catalogue-nav-direction">Назад</a>
 
           <ul class="catalogue-pages">
-            <li class="page-number"><a href="#"><span class="visually-hidden">Страница </span>1</a></li>
+            <li class="page-number page-current"><a href="#"><span class="visually-hidden">Страница </span>1</a></li>
             <li class="page-number"><a href="#"><span class="visually-hidden">Страница </span>2</a></li>
             <li class="page-number"><a href="#"><span class="visually-hidden">Страница </span>3</a></li>
           </ul>
 
-          <a href="#">Вперед</a>
+          <a href="#" class="catalogue-nav-direction">Вперед</a>
         </div>
       </section>
     </main>
