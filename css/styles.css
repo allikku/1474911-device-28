@@ -12,7 +12,7 @@
   --special-green: #91C92F;
   --special-pink: #F6DADA;
 }
-/* font-family: 'Open Sans', sans-serif; */
+
 @font-face {
     font-family: "Gilroy";
     src: local("Gilroy Light"),
@@ -31,6 +31,24 @@
          url("../fonts/gilroyextrabold.woff") format("woff");
     font-weight: 800;
     font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensans.woff2") format("woff2"),
+    url("../fonts/opensans.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Sans";
+  src:
+    url("../fonts/opensanslight.woff2") format("woff2"),
+    url("../fonts/opensanslight.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
 }
 
 /* ---- General ---- */
@@ -81,6 +99,8 @@ img {
   }
 
 .button {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
   letter-spacing: 0.2em;
@@ -152,6 +172,11 @@ header {
   list-style: none;
 }
 
+.main-navigation {
+   font-family: "Gilroy", Arial, sans-serif;
+   font-weight: 800;
+}
+
 .main-navigation li {
   list-style: none;
 
@@ -180,6 +205,8 @@ header {
 }
 
 .slide-title {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
   font-size: 47px;
   line-height: 58px;
 }
@@ -211,9 +238,16 @@ header {
   letter-spacing: 0.05em;
 }
 
+.title {
+   font-family: "Gilroy", Arial, sans-serif;
+   font-weight: 800;
+}
+
 .services {
   background-color: var(--basic-grey-light);
 }
+
+
 .services li {
   list-style: none;
 }
@@ -273,6 +307,8 @@ header {
 }
 
 .contact-us-popup {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
   font-size: 18px;
   line-height: 22px;
 }
@@ -314,6 +350,8 @@ header {
 }
 
 .filters legend {
+  font-family: "Gilroy", Arial, sans-serif;
+  font-weight: 800;
   font-size: 14px;
   line-height: 17px;
   letter-spacing: 0.1em;
@@ -349,6 +387,11 @@ header {
 
 .sorting li {
   list-style: none;
+}
+
+.catalogue-nav {
+   font-family: "Gilroy", Arial, sans-serif;
+   font-weight: 800;
 }
 
 .catalogue-list li {
@@ -459,6 +502,11 @@ header {
 
 .footer-top a:active {
       color: rgba(255, 255, 255, 0.3);
+}
+
+.footer-nav {
+   font-family: "Gilroy", Arial, sans-serif;
+   font-weight: 800;
 }
 
 .footer-nav li {
