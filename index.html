@@ -8,7 +8,7 @@
   </head>
 
   <body>
-    <header class="page-header">
+    <header class="page-header page-wrapper">
       <a href="#">
         <img src="img/device-logo.svg" class="header-logo" alt="Логотип интернет-магазина Device" width="163" height="35">
       </a>
@@ -20,7 +20,7 @@
           <button type="submit" class="search-button"><span>Найти</span></button>
         </form>
 
-        <div class="header-inner-wrapper">
+        <div class="header-inner-wrapper page-column-right">
           <ul class="sign-in">
             <li><a href="#">Войти</a></li>
           </ul>
@@ -30,7 +30,7 @@
       </div>
 
       <nav class="main-navigation">
-        <ul>
+        <ul class="main-navigation-wrapper">
           <li class="navigation-item">
             <a href="catalogue.html">Каталог товаров</a>
             <ul class="catalogue-list visually-hidden">
@@ -52,29 +52,29 @@
     <main>
       <h1 class="visually-hidden">Интернет-магазин «Device»</h1>
 
-      <section class="showcase">
+      <section class="showcase page-wrapper">
         <h2 class="visually-hidden">Промо-предложения</h2>
         <!--Slider -->
         <div class="slide slide-1 slide--active">
           <div class="slider-wrapper">
             <img src="img/slider-1.png" alt="Самая длинная палка для селфи" class="slider-img" width="384" height="486">
           </div>
-          <div class="slider-wrapper">
+          <div class="slider-wrapper slider-wrapper-right page-column-right">
             <span class="slide-number">01</span>
             <h3 class="visually-hidden">Селфи-палка</h3>
-            <p class="title slide-title">Делай селфи, как Бен Стиллер!</p>
-            <p class="slide-desciption">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+            <p class="title slide-title">Делай селфи, <br>как Бен Стиллер!</p>
+            <p class="slide-description">Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
             <a href="#" class="button">Подробнее</a>
             <table class="product-data">
-              <tr>
-                <th>Длина палки</th>
-                <th>Вес палки</th>
-                <th>Материал</th>
-              </tr>
               <tr>
                 <td>8,5 м</td>
                 <td>5 кг</td>
                 <td>Карбон</td>
+              </tr>
+              <tr>
+                <th>Длина палки</th>
+                <th>Вес палки</th>
+                <th>Материал</th>
               </tr>
             </table>
           </div>
@@ -133,7 +133,7 @@
 -->
       </section>
     <!--Категории товаров -->
-      <section class="product-categories">
+      <section class="product-categories page-wrapper">
         <h2 class="visually-hidden">Категории товаров</h2>
         <ul>
           <li>
@@ -160,33 +160,37 @@
     <!-- Услуги -->
 
       <section class="services">
-        <h2 class="visually-hidden">Наши услуги</h2>
+        <div class="page-wrapper">
+          <h2 class="visually-hidden">Наши услуги</h2>
 
-        <ul class="services-list">
-          <li><button type="button" class="services-button">Доставка</button></li>
-          <li><button type="button" class="services-button">Гарантия</button></li>
-          <li><button type="button" class="services-button">Кредит</button></li>
-        </ul>
+          <ul class="services-list">
+            <li><button type="button" class="services-button">Доставка</button></li>
+            <li><button type="button" class="services-button">Гарантия</button></li>
+            <li><button type="button" class="services-button">Кредит</button></li>
+          </ul>
 
-        <ul class="services-desc">
-          <li class="services-slide-1">
-            <h3 class="title services-title">Доставка</h3>
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
-          </li>
-          <li class="services-slide-2">
-            <h3 class="title services-title">Гарантия</h3>
-            <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
-          </li>
-          <li class="services-slide-3">
-            <h3 class="title services-title">Кредит</h3>
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
-          </li>
-        </ul>
+          <ul class="services-desc">
+            <li class="services-slide-1">
+              <h3 class="title services-title">Доставка</h3>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо заработаем, поднимая его на ваш этаж.</p>
+            </li>
+            <!--
+            <li class="services-slide-2">
+              <h3 class="title services-title">Гарантия</h3>
+              <p>Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам новый. Товар, не дом, конечно же.</p>
+            </li>
+            <li class="services-slide-3">
+              <h3 class="title services-title">Кредит</h3>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные условия кредита. Выгодные для нашего банка, разумеется.</p>
+            </li>
+          -->
+          </ul>
+          </div>
       </section>
 
     <!-- Бренды -->
 
-      <section class="featured-brands">
+      <section class="featured-brands page-wrapper">
         <h2 class="visually-hidden">Наши любимые бренды</h2>
 
         <ul>
@@ -206,7 +210,7 @@
       </section>
 
     <!-- О нас и Контакты-->
-      <div>
+      <div class="section-grouping page-wrapper">
         <section class="about-us">
           <h2 class="title">О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
@@ -229,37 +233,37 @@
     </main>
 
     <footer class="main-footer">
-      <div class="footer-wrapper">
+      <div class="page-wrapper">
         <img src="img/logo-yellow.svg" alt="Логотип магазина Device" width="163" height="35" class="footer-logo">
-        <div class="footer-top">
-          <ul class="sign-in">
+        <div class="footer-wrapper-top">
+          <ul class="footer-sign-in">
             <li><a href="#">Войти</a></li>
           </ul>
           <a href="#">Сравнить</a>
           <a href="#">Корзина</a>
         </div>
-      </div>
 
-      <div class="footer-wrapper">
-        <address>г.Москва, ул. Строителей, 15</address>
+        <div class="footer-wrapper-mid">
+          <address>г.Москва, ул. Строителей, 15</address>
 
-        <ul class="footer-nav">
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Гарантия</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
+          <ul class="footer-nav">
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
 
-        <a href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
-      </div>
+          <a href="tel:+74954959595">Тел: +7 (495) 495-95-95</a>
+        </div>
 
-      <div class="footer-wrapper">
-        <ul class="social-links">
-          <li class="Fb"><a href="#">Facebook</a></li>
-          <li class="Ig"><a href="#">Instagram</a></li>
-          <li class="Tw"><a href="#">Twitter</a></li>
-        </ul>
+        <div class="footer-wrapper-bottom">
+          <ul class="social-links">
+            <li class="Fb"><a href="#">Facebook</a></li>
+            <li class="Ig"><a href="#">Instagram</a></li>
+            <li class="Tw"><a href="#">Twitter</a></li>
+          </ul>
 
-        <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy"><img src="img/academy-logo.svg" alt="Логотип HTML Academy" width="27" height="34">HTML Academy</a>
+          <a href="https://htmlacademy.ru/intensive/htmlcss" class="footer-academy"><img src="img/academy-logo.svg" alt="Логотип HTML Academy" width="27" height="34"><span class="visually-hidden">HTML Academy</span></a>
+        </div>
       </div>
     </footer>
 
