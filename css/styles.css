@@ -405,11 +405,14 @@ header {
   letter-spacing: 0.1em;
 }
 
+.product-categories {
+  margin-bottom: 184px;
+}
+
 .product-categories ul {
   padding-left: 0;
   display: flex;
   justify-content: space-between;
-  margin-bottom: 184px;
 }
 
 .product-categories li {
@@ -434,11 +437,11 @@ header {
 }
 
 .services .page-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
 }
 
 .services-list {
-  flex-shrink: 0;
   width: 284px;
   min-height: 320px;
   margin-right: 116px;
@@ -678,22 +681,21 @@ header {
 }
 
 .catalogue-wrapper {
-  display: flex;
+  display: grid;
   justify-content: center;
+  grid-template-columns: calc(50% - 251px) 1fr;
   margin-top: 50px;
 }
 
 .catalogue-filters {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
   background-color: var(--basic-grey-light);
 }
 
 .catalogue-display {
   display: flex;
   flex-direction: column;
-  flex-grow: 1;
 }
 
 .filter-name {
@@ -708,7 +710,6 @@ header {
   width: 268px;
   margin: 0;
   margin-left: auto;
-  padding-left: 32px;
   font-family: "Gilroy", Arial, sans-serif;
   font-size: 16px;
   line-height: 20px;
@@ -720,7 +721,6 @@ header {
   width: 268px;
   margin-top: 70px;
   margin-left: auto;
-  padding-left: 32px;
 }
 
 .sorting {
